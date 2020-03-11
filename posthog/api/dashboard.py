@@ -1,4 +1,4 @@
-from rest_framework import request, response, serializers, viewsets # type: ignore
+from rest_framework import serializers, viewsets # type: ignore
 from posthog.models import DashboardItem
 from typing import Dict, Any
 from django.db.models import QuerySet

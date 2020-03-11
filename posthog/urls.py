@@ -1,8 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include, re_path
-from django.views.generic.base import TemplateView
 from django.template.loader import get_template
-from django.http import HttpResponse, JsonResponse
+from django.http import HttpResponse
 from django.shortcuts import redirect
 from django.contrib.auth import authenticate, login, views as auth_views, decorators
 from django.conf import settings
@@ -10,7 +9,6 @@ from django.views.decorators.csrf import csrf_exempt
 
 from .api import router, capture, user
 from .models import Team, User
-import json
 import posthoganalytics
 import os
 

@@ -1,5 +1,5 @@
 from .base import BaseTest
-from posthog.models import Action, ActionStep, Event, Element, Person
+from posthog.models import Action, ActionStep, Event, Person
 from freezegun import freeze_time # type: ignore
 
 class TestAction(BaseTest):

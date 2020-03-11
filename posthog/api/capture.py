@@ -1,11 +1,11 @@
-from posthog.models import Event, Team, Person, Element, PersonDistinctId
+from posthog.models import Event, Team, Person, Element
 from django.http import HttpResponse, JsonResponse
 from django.db import IntegrityError
 from django.views.decorators.csrf import csrf_exempt
 import json
 import base64
 from urllib.parse import urlparse
-from typing import Dict, Union, Optional, List
+from typing import Dict, Union, Optional
 
 
 def get_ip_address(request):

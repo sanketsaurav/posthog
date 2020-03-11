@@ -1,13 +1,11 @@
-from posthog.models import Event, Team, Action, ActionStep, Element, User
-from rest_framework import request, serializers, viewsets, authentication # type: ignore
+from posthog.models import Event, Action, ActionStep, User
+from rest_framework import serializers, viewsets, authentication # type: ignore
 from rest_framework.response import Response
 from rest_framework.decorators import action # type: ignore
 from rest_framework.exceptions import AuthenticationFailed
-from django.db.models import Q, F, Count, Prefetch
-from django.forms.models import model_to_dict
+from django.db.models import Count, Prefetch
 from typing import Any, List, Dict
 import pandas as pd # type: ignore
-import numpy as np # type: ignore
 import datetime
 from dateutil.relativedelta import relativedelta
 

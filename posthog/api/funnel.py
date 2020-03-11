@@ -1,7 +1,6 @@
-from posthog.models import FunnelStep, Action, ActionStep, Event, Funnel, Person
-from rest_framework import request, response, serializers, viewsets # type: ignore
-from rest_framework.decorators import action # type: ignore
-from django.db.models import QuerySet, query, Model
+from posthog.models import FunnelStep, Event, Funnel
+from rest_framework import serializers, viewsets # type: ignore
+from django.db.models import QuerySet
 from typing import List, Dict, Any
 
 

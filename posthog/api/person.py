@@ -1,8 +1,7 @@
-from posthog.models import Event, Team, Person, PersonDistinctId
-from rest_framework import serializers, viewsets, response, request
+from posthog.models import Event, Person
+from rest_framework import serializers, viewsets, response
 from rest_framework.decorators import action
-from django.db.models import Q, Prefetch, QuerySet, Subquery, OuterRef
-from .event import EventSerializer
+from django.db.models import Prefetch, QuerySet
 from typing import Union
 from .base import CursorPagination
 
